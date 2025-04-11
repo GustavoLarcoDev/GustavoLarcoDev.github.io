@@ -1,47 +1,40 @@
 // Datos de los proyectos
 const projects = [
-    {
-        title: "",
-        description: "Enterprise-level IoT system built with C# and .NET Core for real-time environmental monitoring. Features include RESTful API architecture, microservices for data processing, Azure IoT Hub integration, and real-time dashboard with SignalR. Implements design patterns like Repository, CQRS, and Event Sourcing.",
-        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
-        technologies: ["C#", ".NET Core", "Azure IoT", "SignalR", "SQL Server", "Docker"],
-        github: "https://github.com/GustavoLarcoDev"
-    },
-    {
-        title: "AI-Powered Data Analysis Suite",
-        description: "Advanced data analysis platform using Python and machine learning for environmental predictions. Features include ML models with scikit-learn and TensorFlow, data processing with Pandas, interactive visualizations with Plotly, and a FastAPI backend. Includes CI/CD pipeline with GitHub Actions.",
-        image: "https://images.unsplash.com/photo-1555952494-efd681c7e3f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        technologies: ["Python", "TensorFlow", "FastAPI", "Pandas", "Docker", "GitHub Actions"],
-        github: "https://github.com/GustavoLarcoDev"
-    },
-    {
-        title: "Real-time Hotel Analytics Dashboard",
-        description: "Enterprise dashboard developed with TypeScript and React for hotel data analytics. Features component-based architecture, state management with Redux Toolkit, interactive charts with D3.js, and optimized caching system. Integrates with Salesforce APIs and booking systems.",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        technologies: ["TypeScript", "React", "Redux", "D3.js", "Salesforce API", "Jest"],
-        github: "https://github.com/GustavoLarcoDev"
-    },
-    {
-        title: "Environmental Data Analysis Platform",
-        description: "Comprehensive platform combining C# and Python for advanced environmental data analysis. Features clean architecture backend in .NET Core, Python microservices for data processing, and TypeScript frontend with Next.js. Implements CI/CD, automated testing, and Azure Application Insights monitoring.",
-        image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        technologies: ["C#", "Python", "TypeScript", "Next.js", "Azure", "Docker"],
-        github: "https://github.com/GustavoLarcoDev"
-    },
-    {
-        title: "Power BI Custom Visualization Tool",
-        description: "Custom visualization toolkit for Power BI developed with TypeScript. Features reusable components for advanced charts, external API integration for data enrichment, and a dynamic reporting template system. Enhances data storytelling capabilities in enterprise environments.",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80",
-        technologies: ["TypeScript", "Power BI", "D3.js", "Azure Functions", "REST APIs"],
-        github: "https://github.com/GustavoLarcoDev"
-    },
-    {
-        title: "Multi-tenant Resource Management System",
-        description: "Enterprise-grade multi-tenant resource management system built with C# and .NET 6. Features microservices architecture, Identity Server authentication, RabbitMQ messaging system, and distributed caching with Redis. Deployed using Docker and Kubernetes for scalability.",
-        image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2034&q=80",
-        technologies: ["C#", ".NET 6", "RabbitMQ", "Redis", "Docker", "Kubernetes"],
-        github: "https://github.com/GustavoLarcoDev"
-    }
+  {
+    title: "Bella Nails – Beauty Salon Website",
+    description: "Modern and responsive website for a beauty salon, built with HTML, CSS, and JavaScript. Features a service gallery, online booking system, and mobile-optimized design using Bootstrap.",
+    image: "https://gustavolarcodev.github.io/bella-nails-salon/assets/images/galeria/galeria1.jpg",
+    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive Design"],
+    github: "https://github.com/GustavoLarcoDev/bella-nails-salon"
+  },
+  {
+    title: "La Mesa – Restaurant & Bar",
+    description: "Elegant restaurant website showcasing Mediterranean cuisine, with an interactive menu, customer reviews, and reservation functionality. Designed using HTML, CSS, JavaScript, and Bootstrap.",
+    image: "https://gustavolarcodev.github.io/restaurant-la-mesa/assets/images/chef.jpg",
+    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive Design"],
+    github: "https://github.com/GustavoLarcoDev/restaurant-la-mesa"
+  },
+  {
+    title: "Urban Style – Fashion E-Commerce",
+    description: "Trendy clothing store website featuring a dynamic catalog, filterable product categories, and stylish visuals. Built with HTML, CSS, JavaScript, and Bootstrap for a smooth user experience.",
+    image: "https://gustavolarcodev.github.io/urban-style-clothing/assets/images/novedades/novedad1.jpg",
+    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive Design"],
+    github: "https://github.com/GustavoLarcoDev/urban-style-clothing"
+  },
+  {
+    title: "Casa & Estilo – Furniture and Decor",
+    description: "Furniture store website presenting featured products, design inspirations, and personalized service sections. Developed with HTML, CSS, JavaScript, and Bootstrap for cross-device compatibility.",
+    image: "https://gustavolarcodev.github.io/casa-estilo-furniture/assets/images/productos/producto1.jpg",
+    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive Design"],
+    github: "https://github.com/GustavoLarcoDev/casa-estilo-furniture"
+  },
+  {
+    title: "Impulsoyz – Digital Marketing Agency",
+    description: "Corporate website for a digital marketing agency, highlighting services like professional photography, video production, web development, and digital strategies. Built with HTML, CSS, JavaScript, and Bootstrap.",
+    image: "https://impulsoyz.com/assets/images/branding.jpg",
+    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive Design"],
+    github: "https://github.com/GustavoLarcoDev/impulsoyz"
+  }
 ];
 
 // Cargar proyectos dinámicamente
