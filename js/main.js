@@ -1,7 +1,7 @@
 // Datos de los proyectos
 const projects = [
     {
-        title: "Smart Environmental Monitoring Platform",
+        title: "",
         description: "Enterprise-level IoT system built with C# and .NET Core for real-time environmental monitoring. Features include RESTful API architecture, microservices for data processing, Azure IoT Hub integration, and real-time dashboard with SignalR. Implements design patterns like Repository, CQRS, and Event Sourcing.",
         image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
         technologies: ["C#", ".NET Core", "Azure IoT", "SignalR", "SQL Server", "Docker"],
