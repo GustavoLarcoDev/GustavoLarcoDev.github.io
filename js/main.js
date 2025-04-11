@@ -3,7 +3,7 @@ const projects = [
   {
     title: "Bella Nails – Beauty Salon Website",
     description: "Modern and responsive website for a beauty salon, built with HTML, CSS, and JavaScript. Features a service gallery, online booking system, and mobile-optimized design using Bootstrap.",
-    image: "https://gustavolarcodev.github.io/bella-nails-salon/assets/images/galeria/galeria1.jpg",
+    image: "https://cdn.pixabay.com/photo/2023/02/15/10/22/backlinks-7791410_1280.jpg",
     technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive Design"],
     github: "https://github.com/GustavoLarcoDev/bella-nails-salon"
   },
