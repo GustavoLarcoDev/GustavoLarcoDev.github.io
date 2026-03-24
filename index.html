@@ -15,7 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header/Navbar -->
     <header>
         <nav class="navbar">
             <div class="logo">GL</div>
@@ -25,13 +24,9 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
+            <div class="menu-btn"><i class="fas fa-bars"></i></div>
         </nav>
     </header>
-
-    <!-- Hero Section -->
     <section id="inicio" class="hero">
         <div class="hero-content">
             <h1>Gustavo Larco</h1>
@@ -40,8 +35,6 @@
             <a href="#projects" class="cta-button">View Projects</a>
         </div>
     </section>
-
-    <!-- About Me -->
     <section id="about" class="about">
         <h2>About Me</h2>
         <div class="about-content">
@@ -56,80 +49,30 @@
                     <p><i class="fas fa-envelope"></i> gustavo.larcoj@gmail.com</p>
                     <p><i class="fas fa-phone"></i> 737-287-6304</p>
                 </div>
-                <a href="Gustavo_Larco_Resume.pdf" class="download-cv" target="_blank">Download Resume <i class="fas fa-download"></i></a>
+                <a href="Resume Gustavo-Larco.pdf" class="download-cv" target="_blank">Download Resume <i class="fas fa-download"></i></a>
             </div>
         </div>
     </section>
-
-    <!-- Projects -->
     <section id="projects" class="projects">
         <h2>My Projects</h2>
-        <div class="projects-grid">
-            <!-- Projects loaded dynamically via JavaScript -->
-        </div>
+        <div class="projects-grid"></div>
     </section>
-
-    <!-- Skills -->
     <section id="skills" class="skills">
         <h2>Technical Skills</h2>
         <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Languages</h3>
-                <ul>
-                    <li>C#</li>
-                    <li>Python 3</li>
-                    <li>JavaScript ES6+</li>
-                    <li>TypeScript</li>
-                    <li>SQL</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Frameworks & Libraries</h3>
-                <ul>
-                    <li>ASP.NET Core / .NET</li>
-                    <li>React.js / Next.js</li>
-                    <li>Django / Django REST</li>
-                    <li>FastAPI</li>
-                    <li>Node.js</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Cloud, Data & DevOps</h3>
-                <ul>
-                    <li>Microsoft Azure</li>
-                    <li>AWS (S3)</li>
-                    <li>Power BI / DAX</li>
-                    <li>Docker</li>
-                    <li>CI/CD (GitHub Actions)</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Databases & Tools</h3>
-                <ul>
-                    <li>PostgreSQL / SQL Server</li>
-                    <li>MongoDB / MySQL</li>
-                    <li>Entity Framework Core</li>
-                    <li>Git / GitHub</li>
-                    <li>Stripe API / SignalR</li>
-                </ul>
-            </div>
+            <div class="skill-category"><h3>Languages</h3><ul><li>C#</li><li>Python 3</li><li>JavaScript ES6+</li><li>TypeScript</li><li>SQL</li></ul></div>
+            <div class="skill-category"><h3>Frameworks & Libraries</h3><ul><li>ASP.NET Core / .NET</li><li>React.js / Next.js</li><li>Django / Django REST</li><li>FastAPI</li><li>Node.js</li></ul></div>
+            <div class="skill-category"><h3>Cloud, Data & DevOps</h3><ul><li>Microsoft Azure</li><li>AWS (S3)</li><li>Power BI / DAX</li><li>Docker</li><li>CI/CD (GitHub Actions)</li></ul></div>
+            <div class="skill-category"><h3>Databases & Tools</h3><ul><li>PostgreSQL / SQL Server</li><li>MongoDB / MySQL</li><li>Entity Framework Core</li><li>Git / GitHub</li><li>Stripe API / SignalR</li></ul></div>
         </div>
     </section>
-
-    <!-- Contact -->
     <section id="contact" class="contact">
         <h2>Contact Me</h2>
         <div class="contact-content">
             <form id="contact-form">
-                <div class="form-group">
-                    <input type="text" id="name" name="name" required placeholder="Name">
-                </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email" required placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" required placeholder="Message"></textarea>
-                </div>
+                <div class="form-group"><input type="text" id="name" name="name" required placeholder="Name"></div>
+                <div class="form-group"><input type="email" id="email" name="email" required placeholder="Email"></div>
+                <div class="form-group"><textarea id="message" name="message" required placeholder="Message"></textarea></div>
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
             <div class="social-links">
@@ -139,11 +82,7 @@
             </div>
         </div>
     </section>
-
-    <footer>
-        <p>&copy; <script>document.write(new Date().getFullYear())</script> Gustavo Larco. All rights reserved.</p>
-    </footer>
-
+    <footer><p>&copy; <script>document.write(new Date().getFullYear())</script> Gustavo Larco. All rights reserved.</p></footer>
     <script src="js/main.js"></script>
 </body>
 </html>
