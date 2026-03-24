@@ -1,69 +1,91 @@
-// Datos de los proyectos
+// Project data - showcasing best technical projects
 const projects = [
-  {
-    title: "Bella Nails – Beauty Salon Website",
-    description: "Modern and responsive website for a beauty salon, built with HTML, CSS, and JavaScript. Features a service gallery, online booking system, and mobile-optimized design using Bootstrap.",
-    image: "https://cdn.pixabay.com/photo/2023/02/15/10/22/backlinks-7791410_1280.jpg",
-    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive Design"],
-    github: "https://gustavolarcodev.github.io/bella-nails-salon/"
-  },
-  {
-    title: "La Mesa – Restaurant & Bar",
-    description: "Elegant restaurant website showcasing Mediterranean cuisine, with an interactive menu, customer reviews, and reservation functionality. Designed using HTML, CSS, JavaScript, and Bootstrap.",
-    image: "https://cdn.pixabay.com/photo/2023/02/15/10/22/backlinks-7791414_1280.jpg",
-    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive Design"],
-    github: "https://gustavolarcodev.github.io/restaurant-la-mesa/"
-  },
-  {
-    title: "Urban Style – Fashion E-Commerce",
-    description: "Trendy clothing store website featuring a dynamic catalog, filterable product categories, and stylish visuals. Built with HTML, CSS, JavaScript, and Bootstrap for a smooth user experience.",
-    image: "https://cdn.pixabay.com/photo/2016/07/27/15/56/link-1545625_1280.jpg",
-    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive Design"],
-    github: "https://gustavolarcodev.github.io/urban-style-clothing/"
-  },
-  {
-    title: "Casa & Estilo – Furniture and Decor",
-    description: "Furniture store website presenting featured products, design inspirations, and personalized service sections. Developed with HTML, CSS, JavaScript, and Bootstrap for cross-device compatibility.",
-    image: "https://cdn.pixabay.com/photo/2023/02/15/10/19/backlinks-7791387_1280.jpg",
-    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive Design"],
-    github: "https://gustavolarcodev.github.io/casa-estilo-furniture/"
-  },
-  {
-    title: "Impulsoyz – Digital Marketing Agency",
-    description: "Corporate website for a digital marketing agency, highlighting services like professional photography, video production, web development, and digital strategies. Built with HTML, CSS, JavaScript, and Bootstrap.",
-    image: "https://media.istockphoto.com/id/691886452/photo/colorful-light-bulb-and-business-icons.jpg?s=2048x2048&w=is&k=20&c=qqXkmgX2ho5GGAOpdDDNQuO2DRucZvatRzPF42Rzw08=",
-    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive Design"],
-    github: "https://impulsoyz.com/"
-  }
+    {
+        title: "MyHotel — Hotel Management System",
+        description: "Enterprise-grade hotel operations platform built with ASP.NET Core MVC featuring 29 controllers spanning front desk, housekeeping, maintenance, budgeting, HR, and guest services. Includes real-time notifications via SignalR and automated CI/CD with GitHub Actions.",
+        image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+        technologies: ["C#", "ASP.NET Core", "Entity Framework", "SignalR", "GitHub Actions"],
+        github: "https://github.com/GustavoLarcoDev/myhotel",
+        live: null
+    },
+    {
+        title: "EduTools — Educational Platform",
+        description: "Full-stack educational platform for university students with career-specific tools, tutorials, and video content. Features Stripe payment processing for premium subscriptions and AWS S3 for file storage.",
+        image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=800&q=80",
+        technologies: ["Django", "Next.js", "TypeScript", "PostgreSQL", "Stripe", "AWS S3"],
+        github: "https://github.com/GustavoLarcoDev/EduTools",
+        live: null
+    },
+    {
+        title: "Expenses — Financial Receipt Manager",
+        description: "Django financial management application with user authentication, receipt CRUD operations, and multi-category expense tracking. Built with modular multi-app architecture, mypy type checking, and comprehensive test suite.",
+        image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80",
+        technologies: ["Python", "Django", "SQLite", "mypy", "pytest"],
+        github: "https://github.com/GustavoLarcoDev/expenses",
+        live: null
+    },
+    {
+        title: "GameStore API — Game Catalog Backend",
+        description: "RESTful game store API using ASP.NET Core Minimal APIs with .NET 9.0. Implements DTO pattern, entity mapping layer, and clean endpoint architecture for game and genre management.",
+        image: "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=800&q=80",
+        technologies: ["C#", ".NET 9.0", "Minimal APIs", "Entity Framework", "SQLite"],
+        github: "https://github.com/GustavoLarcoDev/backendgamestore",
+        live: null
+    },
+    {
+        title: "BlogCore — Content Management Platform",
+        description: "Blog/CMS platform built with ASP.NET Core following N-tier architecture with separate data access and business logic layers. Uses .NET 8.0 with Areas pattern for modular organization.",
+        image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80",
+        technologies: ["C#", ".NET 8.0", "ASP.NET MVC", "Entity Framework", "N-tier"],
+        github: "https://github.com/GustavoLarcoDev/blogcore",
+        live: null
+    },
+    {
+        title: "Cocktails — Recipe Management App",
+        description: "Django web application for browsing and managing cocktail recipes with media uploads, static file serving, and automated CI/CD deployment via GitHub Actions.",
+        image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80",
+        technologies: ["Python", "Django", "GitHub Actions", "CI/CD"],
+        github: "https://github.com/GustavoLarcoDev/cocktails",
+        live: null
+    }
 ];
 
-// Cargar proyectos dinámicamente
+// Load projects dynamically
 function loadProjects() {
     const projectsGrid = document.querySelector('.projects-grid');
-    
+    const fragment = document.createDocumentFragment();
+
     projects.forEach(project => {
-        const projectCard = `
-            <div class="project-card">
-                <img src="${project.image}" alt="${project.title}" class="project-image">
-                <div class="project-info">
-                    <h3>${project.title}</h3>
-                    <p>${project.description}</p>
-                    <div class="project-technologies">
-                        ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
-                    </div>
-                    <div class="project-links">
-                        <a href="${project.github}" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
-                    </div>
+        const card = document.createElement('div');
+        card.className = 'project-card';
+
+        const liveLink = project.live
+            ? `<a href="${project.live}" target="_blank" class="project-link project-link-live"><i class="fas fa-external-link-alt"></i> Live Demo</a>`
+            : '';
+
+        card.innerHTML = `
+            <img src="${project.image}" alt="${project.title}" class="project-image">
+            <div class="project-info">
+                <h3>${project.title}</h3>
+                <p>${project.description}</p>
+                <div class="project-technologies">
+                    ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                </div>
+                <div class="project-links">
+                    <a href="${project.github}" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                    ${liveLink}
                 </div>
             </div>
         `;
-        projectsGrid.innerHTML += projectCard;
+        fragment.appendChild(card);
     });
+
+    projectsGrid.appendChild(fragment);
 }
 
-// Menú móvil
+// Mobile menu
 function setupMobileMenu() {
     const menuBtn = document.querySelector('.menu-btn');
     const navLinks = document.querySelector('.nav-links');
@@ -71,42 +93,50 @@ function setupMobileMenu() {
     menuBtn.addEventListener('click', () => {
         navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
     });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                navLinks.style.display = 'none';
+            }
+        });
+    });
 }
 
-// Formulario de contacto
+// Contact form
 function setupContactForm() {
     const contactForm = document.getElementById('contact-form');
-    
+
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        
-        // Aquí puedes agregar la lógica para enviar el formulario
+
         const formData = {
             name: document.getElementById('name').value,
             email: document.getElementById('email').value,
             message: document.getElementById('message').value
         };
-        
-        console.log('Formulario enviado:', formData);
-        // Limpia el formulario
+
+        console.log('Form submitted:', formData);
         contactForm.reset();
-        alert('¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.');
+        alert('Thank you for your message! I will get back to you soon.');
     });
 }
 
-// Animación suave del scroll
+// Smooth scroll
 function setupSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
         });
     });
 }
 
-// Inicializar todas las funciones cuando el DOM esté cargado
+// Initialize
 document.addEventListener('DOMContentLoaded', () => {
     loadProjects();
     setupMobileMenu();
