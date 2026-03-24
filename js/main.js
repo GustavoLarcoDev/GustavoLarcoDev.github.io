@@ -1,28 +1,60 @@
-// Project data - showcasing best technical projects
+// Project data - real deployed projects and best technical work
 const projects = [
     {
+        title: "TryQL — Donation & Micro-Philanthropy Platform",
+        description: "Production SaaS platform built at Simplicity Software that rounds up debit/credit card transactions and directs spare change to local nonprofits, churches, and community organizations. Serving 10,000+ donors and 500+ causes with secure payment processing.",
+        image: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=800&q=80",
+        technologies: ["C#", ".NET", "Tailwind CSS", "Cloudflare", "Google Analytics", "Stripe"],
+        github: null,
+        live: "https://tryql.com"
+    },
+    {
         title: "MyHotel — Hotel Management System",
-        description: "Enterprise-grade hotel operations platform built with ASP.NET Core MVC featuring 29 controllers spanning front desk, housekeeping, maintenance, budgeting, HR, and guest services. Includes real-time notifications via SignalR and automated CI/CD with GitHub Actions.",
+        description: "Enterprise-grade hotel operations platform with 29 controllers spanning front desk, housekeeping, maintenance, budgeting, HR evaluations, and guest services. Features real-time push notifications via SignalR and automated CI/CD deployment.",
         image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
-        technologies: ["C#", "ASP.NET Core", "Entity Framework", "SignalR", "GitHub Actions"],
+        technologies: ["C#", "ASP.NET Core MVC", "Entity Framework", "SignalR", "GitHub Actions"],
         github: "https://github.com/GustavoLarcoDev/myhotel",
         live: null
     },
     {
+        title: "MiGimnasio — Gym Management SaaS",
+        description: "Full-stack SaaS platform for gym owners featuring client management, automated payment reminders via WhatsApp/SMS, financial reporting, QR attendance tracking, and online payments. Built with ASP.NET backend and modern responsive frontend.",
+        image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80",
+        technologies: ["C#", "ASP.NET", "SQL Server", "Bootstrap", "JavaScript", "AOS"],
+        github: "https://github.com/GustavoLarcoDev/gimnasio",
+        live: "https://gustavolarcodev.github.io/migimnasiolandingpage/"
+    },
+    {
         title: "EduTools — Educational Platform",
-        description: "Full-stack educational platform for university students with career-specific tools, tutorials, and video content. Features Stripe payment processing for premium subscriptions and AWS S3 for file storage.",
+        description: "Full-stack educational platform for university students with career-specific tools, tutorials, and video content. Integrated Stripe payment processing for premium subscriptions and AWS S3 for scalable file storage.",
         image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=800&q=80",
         technologies: ["Django", "Next.js", "TypeScript", "PostgreSQL", "Stripe", "AWS S3"],
         github: "https://github.com/GustavoLarcoDev/EduTools",
         live: null
     },
     {
-        title: "Expenses — Financial Receipt Manager",
-        description: "Django financial management application with user authentication, receipt CRUD operations, and multi-category expense tracking. Built with modular multi-app architecture, mypy type checking, and comprehensive test suite.",
-        image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80",
-        technologies: ["Python", "Django", "SQLite", "mypy", "pytest"],
-        github: "https://github.com/GustavoLarcoDev/expenses",
-        live: null
+        title: "Impulsoyz — Digital Marketing Agency",
+        description: "Professional multi-page website for a real digital marketing agency in Ecuador. Features service catalog, portfolio gallery, tiered pricing for marketing and web development packages, WhatsApp integration, and SEO optimization. Deployed with custom domain.",
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        technologies: ["HTML5", "CSS3", "JavaScript", "SEO", "WhatsApp API", "Custom Domain"],
+        github: "https://github.com/GustavoLarcoDev/Impulsoyz",
+        live: "https://impulsoyz.com"
+    },
+    {
+        title: "Trap House Performance — Auto Customization Shop",
+        description: "Client website for a real truck customization and diesel performance shop in Austin, TX. Features service showcase, build portfolio gallery with carousel, quote request form, and SMS/WhatsApp integration for customer contact.",
+        image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=80",
+        technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "WhatsApp"],
+        github: "https://github.com/GustavoLarcoDev/Traphouseperformance",
+        live: "https://gustavolarcodev.github.io/Traphouseperformance/"
+    },
+    {
+        title: "SkyFumig — Agricultural Drone Fumigation",
+        description: "Professional website for a drone-based agricultural fumigation service specializing in precision pest control for banana and cacao crops. Features service catalog, video gallery, interactive pricing calculator, and client testimonials.",
+        image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=800&q=80",
+        technologies: ["HTML5", "CSS3", "JavaScript", "Video Integration", "WhatsApp API"],
+        github: "https://github.com/GustavoLarcoDev/Fumigation",
+        live: "https://gustavolarcodev.github.io/Fumigation/"
     },
     {
         title: "GameStore API — Game Catalog Backend",
@@ -30,22 +62,6 @@ const projects = [
         image: "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=800&q=80",
         technologies: ["C#", ".NET 9.0", "Minimal APIs", "Entity Framework", "SQLite"],
         github: "https://github.com/GustavoLarcoDev/backendgamestore",
-        live: null
-    },
-    {
-        title: "BlogCore — Content Management Platform",
-        description: "Blog/CMS platform built with ASP.NET Core following N-tier architecture with separate data access and business logic layers. Uses .NET 8.0 with Areas pattern for modular organization.",
-        image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80",
-        technologies: ["C#", ".NET 8.0", "ASP.NET MVC", "Entity Framework", "N-tier"],
-        github: "https://github.com/GustavoLarcoDev/blogcore",
-        live: null
-    },
-    {
-        title: "Cocktails — Recipe Management App",
-        description: "Django web application for browsing and managing cocktail recipes with media uploads, static file serving, and automated CI/CD deployment via GitHub Actions.",
-        image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80",
-        technologies: ["Python", "Django", "GitHub Actions", "CI/CD"],
-        github: "https://github.com/GustavoLarcoDev/cocktails",
         live: null
     }
 ];
@@ -59,8 +75,12 @@ function loadProjects() {
         const card = document.createElement('div');
         card.className = 'project-card';
 
+        const githubLink = project.github
+            ? `<a href="${project.github}" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>`
+            : '';
+
         const liveLink = project.live
-            ? `<a href="${project.live}" target="_blank" class="project-link project-link-live"><i class="fas fa-external-link-alt"></i> Live Demo</a>`
+            ? `<a href="${project.live}" target="_blank" class="project-link project-link-live"><i class="fas fa-external-link-alt"></i> Live Site</a>`
             : '';
 
         card.innerHTML = `
@@ -72,9 +92,7 @@ function loadProjects() {
                     ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
                 </div>
                 <div class="project-links">
-                    <a href="${project.github}" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
+                    ${githubLink}
                     ${liveLink}
                 </div>
             </div>
@@ -94,7 +112,6 @@ function setupMobileMenu() {
         navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
     });
 
-    // Close menu when a link is clicked
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
             if (window.innerWidth <= 768) {
@@ -110,13 +127,11 @@ function setupContactForm() {
 
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-
         const formData = {
             name: document.getElementById('name').value,
             email: document.getElementById('email').value,
             message: document.getElementById('message').value
         };
-
         console.log('Form submitted:', formData);
         contactForm.reset();
         alert('Thank you for your message! I will get back to you soon.');
