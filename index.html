@@ -1,88 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gustavo Larco | Software Engineer</title>
-    <meta name="description" content="Full Stack Software Engineer specializing in C#/.NET, Python, React, and Data Analytics. Building scalable web applications and data-driven solutions.">
-    <meta property="og:title" content="Gustavo Larco | Software Engineer">
-    <meta property="og:description" content="Full Stack Software Engineer building scalable web apps with C#/.NET, Python, React, and Power BI.">
-    <meta property="og:type" content="website">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gustavo Larco — Full Stack Software Engineer & Data Analyst. Building scalable web applications with C#/.NET, React, Python, and cloud technologies." />
+  <meta name="keywords" content="Gustavo Larco, Software Engineer, Full Stack Developer, Data Analyst, C#, .NET, React, Python, Portfolio" />
+  <meta name="author" content="Gustavo Larco" />
+  <meta property="og:title" content="Gustavo Larco — Software Engineer & Data Analyst" />
+  <meta property="og:description" content="Full Stack Software Engineer building scalable web applications and data-driven solutions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gustavolarcodev.github.io" />
+  <title>Gustavo Larco — Software Engineer &amp; Data Analyst</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>GL</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">GL</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="menu-btn"><i class="fas fa-bars"></i></div>
-        </nav>
-    </header>
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Gustavo Larco</h1>
-            <h2>Software Engineer</h2>
-            <p class="typewriter">Building scalable applications and data-driven solutions</p>
-            <a href="#projects" class="cta-button">View Projects</a>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">&lt;<span>GL</span>/&gt;</a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a href="Gustavo_Larco_Resume.pdf" target="_blank" class="nav-resume-btn">
+          <i class="fa-solid fa-download"></i> Resume
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <section id="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-gradient-orb orb-1"></div>
+    <div class="hero-gradient-orb orb-2"></div>
+    <div class="hero-content">
+      <div class="hero-profile-wrapper" data-aos="zoom-in" data-aos-duration="1000">
+        <img src="profile.jpeg" alt="Gustavo Larco" class="hero-profile-img" />
+      </div>
+      <div class="hero-badge" data-aos="fade-down" data-aos-delay="200">
+        <span class="dot"></span> Available for opportunities
+      </div>
+      <h1 class="hero-name" data-aos="fade-up" data-aos-delay="300">
+        Gustavo <span class="gradient-text">Larco</span>
+      </h1>
+      <div class="hero-typewriter-wrapper" data-aos="fade-up" data-aos-delay="400">
+        <span class="typewriter-static">I'm a</span>
+        <span class="typewriter-text"></span>
+        <span class="typewriter-cursor"></span>
+      </div>
+      <p class="hero-description" data-aos="fade-up" data-aos-delay="500">
+        Building scalable web applications, REST APIs, and data-driven dashboards with modern technologies. Based in St. Louis, MO.
+      </p>
+      <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+        <a href="#projects" class="btn-primary"><i class="fa-solid fa-rocket"></i> View My Work</a>
+        <a href="Gustavo_Larco_Resume.pdf" target="_blank" class="btn-secondary"><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
+      </div>
+      <div class="hero-socials" data-aos="fade-up" data-aos-delay="700">
+        <a href="https://github.com/GustavoLarcoDev" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/gustavo-larco/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:gustavo.larcoj@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:7372876304" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+    <div class="scroll-indicator"><span>Scroll</span><i class="fa-solid fa-chevron-down"></i></div>
+  </section>
+  <section id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">// About Me</span>
+        <h2>Get to Know <span class="gradient-text">Me</span></h2>
+        <p>Engineer by training, developer by passion</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrapper" data-aos="fade-right">
+          <div class="about-image-card">
+            <img src="profile.jpeg" alt="Gustavo Larco" />
+            <div class="about-float-badge top-right"><i class="fa-solid fa-code"></i> 2+ Years Exp.</div>
+            <div class="about-float-badge bottom-left"><i class="fa-solid fa-globe"></i> 4 Languages</div>
+          </div>
         </div>
-    </section>
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <div class="profile-image">
-                <img src="profile.jpeg" alt="Gustavo Larco - Software Engineer">
-            </div>
-            <div class="about-text">
-                <p>Full Stack Software Engineer and Data Analyst with 2+ years of experience building scalable web applications, REST APIs, and interactive dashboards. I specialize in C#/.NET, Python, JavaScript/TypeScript, and React, with hands-on experience deploying to Azure and AWS. Currently at Simplicity Software, where I build enterprise applications and deliver data insights through Power BI.</p>
-                <p>Graduate of Hack Reactor's Advanced Software Engineering Immersive (800+ hours). I combine strong analytical skills from my Environmental Engineering background with a passion for clean, maintainable code. Bilingual in English and Spanish, with proficiency in Portuguese and Italian.</p>
-                <div class="contact-info">
-                    <p><i class="fas fa-map-marker-alt"></i> St Louis, MO</p>
-                    <p><i class="fas fa-envelope"></i> gustavo.larcoj@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> 737-287-6304</p>
-                </div>
-                <a href="Resume Gustavo-Larco.pdf" class="download-cv" target="_blank">Download Resume <i class="fas fa-download"></i></a>
-            </div>
+        <div class="about-text" data-aos="fade-left">
+          <h3>Full Stack Engineer &amp; Data Analyst</h3>
+          <p>Full Stack Software Engineer and Data Analyst with 2+ years of experience building scalable web applications, REST APIs, and interactive dashboards. I specialize in C#/.NET, Python, JavaScript/TypeScript, and React, with hands-on experience deploying to Azure and AWS.</p>
+          <p>Currently at Simplicity Software, I build enterprise applications and deliver data insights through Power BI. I'm a graduate of Hack Reactor's Advanced Software Engineering Immersive (800+ hours) and bring a unique analytical perspective from my Environmental Engineering background.</p>
+          <p>Bilingual in English and Spanish, with proficiency in Portuguese and Italian. I'm passionate about clean, maintainable code and creating impactful solutions.</p>
+          <div class="about-details">
+            <div class="about-detail-item"><i class="fa-solid fa-location-dot"></i><div><div class="detail-label">Location</div><div class="detail-value">St. Louis, MO</div></div></div>
+            <div class="about-detail-item"><i class="fa-solid fa-briefcase"></i><div><div class="detail-label">Company</div><div class="detail-value">Simplicity Software</div></div></div>
+            <div class="about-detail-item"><i class="fa-solid fa-envelope"></i><div><div class="detail-label">Email</div><div class="detail-value">gustavo.larcoj@gmail.com</div></div></div>
+            <div class="about-detail-item"><i class="fa-solid fa-language"></i><div><div class="detail-label">Languages</div><div class="detail-value">EN, ES, PT, IT</div></div></div>
+          </div>
         </div>
-    </section>
-    <section id="projects" class="projects">
-        <h2>My Projects</h2>
-        <div class="projects-grid"></div>
-    </section>
-    <section id="skills" class="skills">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category"><h3>Languages</h3><ul><li>C#</li><li>Python 3</li><li>JavaScript ES6+</li><li>TypeScript</li><li>SQL</li></ul></div>
-            <div class="skill-category"><h3>Frameworks & Libraries</h3><ul><li>ASP.NET Core / .NET</li><li>React.js / Next.js</li><li>Django / Django REST</li><li>FastAPI</li><li>Node.js</li></ul></div>
-            <div class="skill-category"><h3>Cloud, Data & DevOps</h3><ul><li>Microsoft Azure</li><li>AWS (S3)</li><li>Power BI / DAX</li><li>Docker</li><li>CI/CD (GitHub Actions)</li></ul></div>
-            <div class="skill-category"><h3>Databases & Tools</h3><ul><li>PostgreSQL / SQL Server</li><li>MongoDB / MySQL</li><li>Entity Framework Core</li><li>Git / GitHub</li><li>Stripe API / SignalR</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="0"><div class="stat-icon"><i class="fa-solid fa-diagram-project"></i></div><div class="stat-number" data-target="9" data-suffix="+">0+</div><div class="stat-label">Projects Built</div></div>
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="100"><div class="stat-icon"><i class="fa-solid fa-calendar-check"></i></div><div class="stat-number" data-target="3" data-suffix="+">0+</div><div class="stat-label">Years Coding</div></div>
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="200"><div class="stat-icon"><i class="fa-solid fa-code"></i></div><div class="stat-number" data-target="50000" data-suffix="+">0+</div><div class="stat-label">Lines of Code</div></div>
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="300"><div class="stat-icon"><i class="fa-solid fa-earth-americas"></i></div><div class="stat-number" data-target="4" data-suffix="">0</div><div class="stat-label">Languages Spoken</div></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">// Tech Stack</span>
+        <h2>Skills &amp; <span class="gradient-text">Technologies</span></h2>
+        <p>Tools and technologies I work with daily</p>
+      </div>
+      <div class="skills-categories">
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="0"><div class="skill-category-header"><div class="skill-category-icon"><i class="fa-solid fa-code"></i></div><h3>Languages</h3></div><div class="skill-tags"><span class="skill-tag">C#</span><span class="skill-tag">Python 3</span><span class="skill-tag">JavaScript ES6+</span><span class="skill-tag">TypeScript</span><span class="skill-tag">SQL</span><span class="skill-tag">HTML5</span><span class="skill-tag">CSS</span></div></div>
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="100"><div class="skill-category-header"><div class="skill-category-icon"><i class="fa-solid fa-layer-group"></i></div><h3>Frameworks</h3></div><div class="skill-tags"><span class="skill-tag">ASP.NET Core / .NET</span><span class="skill-tag">React.js / Next.js</span><span class="skill-tag">Django / Django REST</span><span class="skill-tag">FastAPI</span><span class="skill-tag">Node.js</span></div></div>
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="200"><div class="skill-category-header"><div class="skill-category-icon"><i class="fa-solid fa-cloud"></i></div><h3>Cloud &amp; DevOps</h3></div><div class="skill-tags"><span class="skill-tag">Microsoft Azure</span><span class="skill-tag">AWS (S3)</span><span class="skill-tag">Docker</span><span class="skill-tag">CI/CD (GitHub Actions)</span></div></div>
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="300"><div class="skill-category-header"><div class="skill-category-icon"><i class="fa-solid fa-database"></i></div><h3>Data &amp; Databases</h3></div><div class="skill-tags"><span class="skill-tag">Power BI / DAX</span><span class="skill-tag">PostgreSQL / SQL Server</span><span class="skill-tag">MongoDB / MySQL</span><span class="skill-tag">Entity Framework Core</span></div></div>
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="400"><div class="skill-category-header"><div class="skill-category-icon"><i class="fa-solid fa-wrench"></i></div><h3>Tools &amp; Integrations</h3></div><div class="skill-tags"><span class="skill-tag">Git / GitHub</span><span class="skill-tag">Stripe API</span><span class="skill-tag">SignalR</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">// Career Path</span>
+        <h2>Professional <span class="gradient-text">Experience</span></h2>
+        <p>My journey in tech and beyond</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="0"><div class="timeline-dot"></div><div class="timeline-card"><div class="timeline-date">2025 &mdash; Present</div><h3>Software Engineer / Data Analyst</h3><h4>Simplicity Software</h4></div></div>
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100"><div class="timeline-dot"></div><div class="timeline-card"><div class="timeline-date">2025 &mdash; Present</div><h3>Full Stack Web Developer</h3><h4>Freelance</h4></div></div>
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200"><div class="timeline-dot"></div><div class="timeline-card"><div class="timeline-date">Aug 2023 &mdash; Aug 2024</div><h3>Warehouse Associate / Coach Ambassador</h3><h4>Amazon</h4></div></div>
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300"><div class="timeline-dot"></div><div class="timeline-card"><div class="timeline-date">Feb 2022 &mdash; Aug 2023</div><h3>Principal Customer Service</h3><h4>Marriott Aloft Hotel</h4></div></div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">// Portfolio</span>
+        <h2>Featured <span class="gradient-text">Projects</span></h2>
+        <p>A selection of applications and websites I have built</p>
+      </div>
+      <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="featured">Featured</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="freelance">Freelance</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-category="featured frontend freelance" data-aos="fade-up" data-aos-delay="0">
+          <div class="project-image"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="My-Negocio.com" loading="lazy" /><div class="project-image-overlay"></div><span class="project-featured-badge">Featured</span></div>
+          <div class="project-info"><h3>My-Negocio.com</h3><p>SaaS business management platform serving small businesses across Latin America. Multi-tenant platform supporting memberships, appointments, retail/POS, and restaurants with WhatsApp automation, financial dashboards, and integrated POS.</p><div class="project-tech"><span>JavaScript</span><span>Bootstrap</span><span>REST APIs</span><span>WhatsApp API</span><span>CSS3</span></div><div class="project-links"><a href="https://my-negocio.com" target="_blank" rel="noopener noreferrer" class="project-link live-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</a></div></div>
         </div>
-    </section>
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-content">
-            <form id="contact-form">
-                <div class="form-group"><input type="text" id="name" name="name" required placeholder="Name"></div>
-                <div class="form-group"><input type="email" id="email" name="email" required placeholder="Email"></div>
-                <div class="form-group"><textarea id="message" name="message" required placeholder="Message"></textarea></div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-            <div class="social-links">
-                <a href="https://github.com/GustavoLarcoDev" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/gustavo-larco/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/LarcoGustavo" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
+        <div class="project-card" data-category="featured backend frontend" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-image"><img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=800&q=80" alt="TryQL" loading="lazy" /><div class="project-image-overlay"></div><span class="project-featured-badge">Featured</span></div>
+          <div class="project-info"><h3>TryQL &mdash; Donation Platform</h3><p>Production SaaS platform built at Simplicity Software that rounds up debit/credit card transactions and directs spare change to local nonprofits, churches, and community organizations. Serving 10,000+ donors and 500+ causes with secure payment processing.</p><div class="project-tech"><span>C#</span><span>.NET</span><span>Tailwind CSS</span><span>Cloudflare</span><span>Google Analytics</span><span>Stripe</span></div><div class="project-links"><a href="https://tryql.com" target="_blank" rel="noopener noreferrer" class="project-link live-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</a></div></div>
         </div>
-    </section>
-    <footer><p>&copy; <script>document.write(new Date().getFullYear())</script> Gustavo Larco. All rights reserved.</p></footer>
-    <script src="js/main.js"></script>
+        <div class="project-card" data-category="featured backend" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-image"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="MyHotel" loading="lazy" /><div class="project-image-overlay"></div><span class="project-featured-badge">Featured</span></div>
+          <div class="project-info"><h3>MyHotel &mdash; Hotel Management System</h3><p>Enterprise-grade hotel operations platform with 29 controllers spanning front desk, housekeeping, maintenance, budgeting, HR evaluations, and guest services. Features real-time push notifications via SignalR and automated CI/CD deployment.</p><div class="project-tech"><span>C#</span><span>ASP.NET Core MVC</span><span>Entity Framework</span><span>SignalR</span><span>GitHub Actions</span></div><div class="project-links"><a href="https://github.com/GustavoLarcoDev/myhotel" target="_blank" rel="noopener noreferrer" class="project-link github-link"><i class="fa-brands fa-github"></i> Source Code</a></div></div>
+        </div>
+        <div class="project-card" data-category="featured backend frontend" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-image"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" alt="MiGimnasio" loading="lazy" /><div class="project-image-overlay"></div><span class="project-featured-badge">Featured</span></div>
+          <div class="project-info"><h3>MiGimnasio &mdash; Gym Management SaaS</h3><p>Full-stack SaaS platform for gym owners featuring client management, automated payment reminders via WhatsApp/SMS, financial reporting, QR attendance tracking, and online payments.</p><div class="project-tech"><span>C#</span><span>ASP.NET</span><span>SQL Server</span><span>Bootstrap</span><span>JavaScript</span><span>AOS</span></div><div class="project-links"><a href="https://github.com/GustavoLarcoDev/gimnasio" target="_blank" rel="noopener noreferrer" class="project-link github-link"><i class="fa-brands fa-github"></i> Source Code</a><a href="https://gustavolarcodev.github.io/migimnasiolandingpage/" target="_blank" rel="noopener noreferrer" class="project-link live-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</a></div></div>
+        </div>
+        <div class="project-card" data-category="backend frontend" data-aos="fade-up" data-aos-delay="0">
+          <div class="project-image"><img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=800&q=80" alt="EduTools" loading="lazy" /><div class="project-image-overlay"></div></div>
+          <div class="project-info"><h3>EduTools &mdash; Educational Platform</h3><p>Full-stack educational platform for university students with career-specific tools, tutorials, and video content. Integrated Stripe payment processing for premium subscriptions and AWS S3 for scalable file storage.</p><div class="project-tech"><span>Django</span><span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Stripe</span><span>AWS S3</span></div><div class="project-links"><a href="https://github.com/GustavoLarcoDev/EduTools" target="_blank" rel="noopener noreferrer" class="project-link github-link"><i class="fa-brands fa-github"></i> Source Code</a></div></div>
+        </div>
+        <div class="project-card" data-category="frontend freelance" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-image"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Impulsoyz" loading="lazy" /><div class="project-image-overlay"></div></div>
+          <div class="project-info"><h3>Impulsoyz &mdash; Digital Marketing Agency</h3><p>Professional multi-page website for a real digital marketing agency in Ecuador. Features service catalog, portfolio gallery, tiered pricing, WhatsApp integration, and SEO optimization.</p><div class="project-tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>SEO</span><span>WhatsApp API</span></div><div class="project-links"><a href="https://github.com/GustavoLarcoDev/Impulsoyz" target="_blank" rel="noopener noreferrer" class="project-link github-link"><i class="fa-brands fa-github"></i> Source Code</a><a href="https://impulsoyz.com" target="_blank" rel="noopener noreferrer" class="project-link live-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</a></div></div>
+        </div>
+        <div class="project-card" data-category="frontend freelance" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-image"><img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=80" alt="Trap House Performance" loading="lazy" /><div class="project-image-overlay"></div></div>
+          <div class="project-info"><h3>Trap House Performance</h3><p>Client website for a truck customization and diesel performance shop in Austin, TX. Features service showcase, build portfolio gallery with carousel, quote request form, and SMS/WhatsApp integration.</p><div class="project-tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span><span>WhatsApp</span></div><div class="project-links"><a href="https://github.com/GustavoLarcoDev/Traphouseperformance" target="_blank" rel="noopener noreferrer" class="project-link github-link"><i class="fa-brands fa-github"></i> Source Code</a><a href="https://gustavolarcodev.github.io/Traphouseperformance/" target="_blank" rel="noopener noreferrer" class="project-link live-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</a></div></div>
+        </div>
+        <div class="project-card" data-category="frontend freelance" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-image"><img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=800&q=80" alt="SkyFumig" loading="lazy" /><div class="project-image-overlay"></div></div>
+          <div class="project-info"><h3>SkyFumig &mdash; Drone Fumigation</h3><p>Professional website for drone-based agricultural fumigation service specializing in precision pest control for banana and cacao crops. Features interactive pricing calculator and video gallery.</p><div class="project-tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Video Integration</span><span>WhatsApp API</span></div><div class="project-links"><a href="https://github.com/GustavoLarcoDev/Fumigation" target="_blank" rel="noopener noreferrer" class="project-link github-link"><i class="fa-brands fa-github"></i> Source Code</a><a href="https://gustavolarcodev.github.io/Fumigation/" target="_blank" rel="noopener noreferrer" class="project-link live-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</a></div></div>
+        </div>
+        <div class="project-card" data-category="backend" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-image"><img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=800&q=80" alt="GameStore API" loading="lazy" /><div class="project-image-overlay"></div></div>
+          <div class="project-info"><h3>GameStore API</h3><p>RESTful game store API using ASP.NET Core Minimal APIs with .NET 9.0. Implements DTO pattern, entity mapping layer, and clean endpoint architecture.</p><div class="project-tech"><span>C#</span><span>.NET 9.0</span><span>Minimal APIs</span><span>Entity Framework</span><span>SQLite</span></div><div class="project-links"><a href="https://github.com/GustavoLarcoDev/backendgamestore" target="_blank" rel="noopener noreferrer" class="project-link github-link"><i class="fa-brands fa-github"></i> Source Code</a></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="education">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">// Education</span>
+        <h2>Academic <span class="gradient-text">Background</span></h2>
+        <p>Continuous learning and growth</p>
+      </div>
+      <div class="education-grid">
+        <div class="education-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="education-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Hack Reactor</h3><h4>Advanced Software Engineering Immersive Program</h4>
+          <div class="edu-date">Graduated Jul 2024</div>
+          <div class="edu-detail">800+ hours of intensive full-stack software engineering training</div>
+        </div>
+        <div class="education-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="education-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Universidad T&eacute;cnica de Machala</h3><h4>Environmental Engineering</h4>
+          <div class="edu-date">Graduated Feb 2019</div>
+          <div class="edu-detail">Strong analytical and research foundation applied to software engineering</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">// Get in Touch</span>
+        <h2>Let's <span class="gradient-text">Connect</span></h2>
+        <p>I'm always open to new opportunities and collaborations</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-text" data-aos="fade-up" data-aos-delay="100">
+          <h3>Have a project in mind?</h3>
+          <p>Whether you have a question, a project idea, or just want to say hello, feel free to reach out. I'll get back to you as soon as possible.</p>
+        </div>
+        <div class="contact-cards" data-aos="fade-up" data-aos-delay="200">
+          <a href="mailto:gustavo.larcoj@gmail.com" class="contact-card"><i class="fa-solid fa-envelope"></i><span class="contact-card-label">Email</span><span class="contact-card-value">gustavo.larcoj@gmail.com</span></a>
+          <a href="tel:7372876304" class="contact-card"><i class="fa-solid fa-phone"></i><span class="contact-card-label">Phone</span><span class="contact-card-value">737-287-6304</span></a>
+          <a href="https://www.linkedin.com/in/gustavo-larco/" target="_blank" rel="noopener noreferrer" class="contact-card"><i class="fa-brands fa-linkedin-in"></i><span class="contact-card-label">LinkedIn</span><span class="contact-card-value">gustavo-larco</span></a>
+        </div>
+        <div class="contact-socials" data-aos="fade-up" data-aos-delay="300">
+          <a href="https://github.com/GustavoLarcoDev" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/gustavo-larco/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:gustavo.larcoj@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="current-year"></span> Gustavo Larco. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
